@@ -1,0 +1,289 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Gothampro";
+  font-style: normal;
+  font-size: 12px;
+  color: #2c323a;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.main {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 34px;
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gothampro";
+  src: url(./font/GothamPro.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gothampro";
+  src: url(./font/GothamPro-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gothampro";
+  src: url(./font/GothamPro-Medium.ttf);
+  font-weight: 400;
+}
+
+/* фильтрация квартир */
+
+.filter__cards {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.filter__card {
+  padding: 0 30px 0;
+}
+
+.filter__card_room {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0;
+}
+
+.filter__bufer {
+  width: 2px;
+  height: 20px;
+  background: #ebebeb;
+  display: flex;
+  position: relative;
+  top: 40px;
+  box-sizing: border-box;
+}
+
+.filter__card__room-buttons {
+  display: flex;
+}
+.filter__card__room-button {
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  width: 47px;
+  height: 40px;
+  margin: 0 2px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter__card__room-button:hover {
+  background: #70d24e;
+  color: #fff;
+}
+
+.filter__card__name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.filter__card__name_0 {
+  opacity: 0;
+  line-height: 28px;
+}
+
+.filter__card__inputs {
+  display: flex;
+  align-items: center;
+}
+
+.filter__card__input {
+  width: 80px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+}
+
+.filter__card__slider {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.slider-1 {
+  width: 175px;
+  height: 2px;
+  background: #d8d8d8;
+  border-radius: 15px;
+  position: relative;
+  top: 15px;
+}
+
+.slider-2 {
+  width: 24px;
+  height: 24px;
+  background: #70d24e;
+  box-shadow: 0px 5px 10px rgba(86, 86, 86, 0.05);
+  border-radius: 16px;
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-3 {
+  width: 100px;
+  height: 2px;
+  background: #70d24e;
+  border-radius: 15px;
+  position: relative;
+  bottom: -13px;
+  left: 30px;
+}
+
+.filter-card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 0;
+}
+
+.filter-card-btn1 {
+  width: 201px;
+  height: 40px;
+  color: #fff;
+  background: #70d24e;
+  border: 1px solid #70d24e;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.filter-card-btn2 {
+  width: 106px;
+  height: 28px;
+  border-bottom: solid 1px #70d24e;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+/* плитки квартир */
+
+.flats {
+  padding: 0 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flat {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(86, 86, 86, 0.05);
+  border-radius: 10px;
+  width: 270px;
+  height: 365px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flat:hover .flat__btn {
+  cursor: pointer;
+  display: block;
+}
+
+.flat:hover img {
+  height: 152px;
+  width: 186px;
+  margin-right: 20px;
+}
+
+.flat:hover .flat__image {
+  height: 205px;
+
+}
+
+.flat__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 0 5px 0;
+}
+
+.flat__header__stage {
+  font-weight: 700;
+  line-height: 28px;
+  opacity: 0.5;
+  padding: 0 80px 0 0;
+}
+
+.flat__header__room {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.flat__image {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flat__image__name {
+  border: 1px solid #ebebeb;
+  border-radius: 0px 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 1px;
+  left: 1px;
+}
+
+.flat__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  left: 60px;
+  padding: 10px 0 0 0;
+}
+
+.flat__btn {
+  width: 250px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  background: #70d24e;
+  border-radius: 2px 2px 5px 5px;
+  border: #70d24e;
+  color: #fff;
+  display: none;
+  padding: 10px;
+}
